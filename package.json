@@ -6,6 +6,7 @@
     "serve": "vite preview",
     "build": "vite build",
     "lint": "vue-cli-service lint",
+    "deploy": "sh deploy.sh",
     "dev": "vite"
   },
   "dependencies": {

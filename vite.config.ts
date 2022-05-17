@@ -11,7 +11,7 @@ export default defineConfig({
       autoImport: true,
     }),
   ],
-  publicDir: process.env.NODE_ENV === "production" ? "/portfolio/" : "/",
+  base: process.env.NODE_ENV === "production" ? "/portfolio/" : "/",
   /* remove the need to specify .vue files https://vitejs.dev/config/#resolve-extensions
   resolve: {
     extensions: [
