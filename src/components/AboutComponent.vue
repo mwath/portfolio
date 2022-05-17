@@ -13,7 +13,7 @@
             <v-card-actions>
               <v-btn
                 prepend-icon="mdi-open-in-new"
-                href="/cv.pdf"
+                href="cv.pdf"
                 target="_blank"
                 >Voir CV</v-btn
               >
@@ -22,7 +22,7 @@
         </v-col>
 
         <v-col cols="3">
-          <v-img src="/moi.jpg" />
+          <v-img src="moi.jpg" />
           <h2>Mathieu Walravens</h2>
         </v-col>
       </v-row>
