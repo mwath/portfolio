@@ -24,5 +24,7 @@ import SummaryComponent from "./SummaryComponent.vue";
 }
 h2 {
   margin-top: 50px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 </style>

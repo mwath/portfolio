@@ -7,6 +7,7 @@
           <th class="text-left">Theme</th>
           <th class="text-center">Heures Totales</th>
           <th class="text-center">Heures valorisées</th>
+          <th class="text-center">Lien</th>
         </tr>
       </thead>
       <tbody>
@@ -14,6 +15,13 @@
           <td class="text-left">{{ cat.theme }}</td>
           <td class="text-center">{{ cat.real_hours }}</td>
           <td class="text-center">{{ cat.hours }}</td>
+          <td class="text-center">
+            <v-btn
+              icon="mdi-open-in-new"
+              :href="cat.get_activities()[0].url"
+              target="_blank"
+            />
+          </td>
         </tr>
       </tbody>
       <tfoot>
@@ -21,6 +29,7 @@
           <th class="text-left">Total</th>
           <th class="text-center">{{ total_real_hours }}</th>
           <th class="text-center">{{ total_hours }}</th>
+          <th></th>
         </tr>
       </tfoot>
     </v-table>

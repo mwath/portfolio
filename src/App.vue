@@ -3,7 +3,7 @@
     <v-navigation-drawer app>
       <v-list>
         <v-list-item
-          prepend-avatar="https://randomuser.me/api/portraits/men/78.jpg"
+          prepend-avatar="/moi.jpg"
           title="Mathieu Walravens"
           subtitle="m.walravens@proton.me"
         />
