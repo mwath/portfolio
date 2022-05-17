@@ -37,7 +37,7 @@ export const categories = [
         C'est aussi un moment où j'ai pu rencontrer d'autres personnes ayant la même passion, mais aussi des personnes dont c'est leur travail.
         J'ai appris énormément sur la cyber-sécurité, tout en m'amusant.
       `,
-      url: "assets/cscbe.jpg",
+      url: "cscbe.jpg",
       hours: 30,
     },
     {
@@ -47,7 +47,7 @@ export const categories = [
         Le tout premier CTF auquel j'ai participé. L'évenement m'a permis de m'initier à la cyber-sécurité, dont j'ai retenu beaucoup de choses.
         J'ai appris à regarder les problèmes sous d'autres angles et d'ainsi trouver la solution plus éfficacement.
       `,
-      url: "assets/cteph.jpg",
+      url: "cteph.jpg",
       hours: 15,
     },
   ]),
@@ -60,7 +60,7 @@ export const categories = [
         Le DevDay m'a non seulement appris à mieux utiliser mon éditeur de texte, mais aussi à travailler plus intélligemment et plus éfficacement.
         J'ai également pris connaissance des nouvelles technologies, que j'ai pu utiliser lors de mes différents projets.
       `,
-      url: "assets/devday.jpg",
+      url: "devday.jpg",
       hours: 10,
     },
   ]),
@@ -74,7 +74,7 @@ export const categories = [
         J'ai fait connaissance avec des communautés de Softwares Open-Source, avec lesquelles j'ai discuté. Ces échanges fûrent enrichissants,
         j'ai beaucoup appris sur l'Open Source et les outils permettant d'y contribuer.
       `,
-      url: "assets/hacktoberfest.jpg",
+      url: "hacktoberfest.jpg",
       hours: 10,
     },
   ]),
@@ -87,7 +87,7 @@ export const categories = [
         CodinGame m'a permis de beaucoup pratique la programmation tout au long de mon cursus.
         J'ai non seulement appris des langages de programmation, mais je me suis également entraîné intellectuellement à résoudre des problèmes avec du code.
       `,
-      url: "assets/codingame.jpg",
+      url: "codingame.jpg",
       hours: 80,
     },
   ]),
@@ -100,7 +100,7 @@ export const categories = [
         J'ai pris ce cours Python avant d'avoir les cours de l'EPHEC sur le sujet. J'y ai appris les bases du langage,
         mais aussi des fonctionnalitées avancées Python qui me sont utiles tous les jours lorsque je programme.
       `,
-      url: "assets/python.pdf",
+      url: "python.pdf",
       hours: 10,
     },
   ]),
@@ -112,7 +112,7 @@ export const categories = [
         Ce cours m'a permis d'apprendre d'avantage sur les librairies utilisées dans la data sciences.
         J'ai appris à utiliser ces libraires très utiles, et trouver des applications au-delà de la sciences des données.
       `,
-      url: "assets/python_data.jpg",
+      url: "python_data.jpg",
       hours: 10,
     },
   ]),
