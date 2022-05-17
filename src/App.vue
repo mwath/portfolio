@@ -1,30 +1,38 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view />
+  <v-app theme="dark">
+    <v-navigation-drawer app>
+      <v-list>
+        <v-list-item
+          prepend-avatar="https://randomuser.me/api/portraits/men/78.jpg"
+          title="Mathieu Walravens"
+          subtitle="m.walravens@proton.me"
+        />
+      </v-list>
+      <v-divider></v-divider>
+      <v-list v-for="item in items" :key="item.title" nav density="compact">
+        <v-divider v-if="item.divider" />
+        <v-list-item
+          v-else
+          :title="item.title"
+          :prepend-icon="item.icon"
+          :to="{ hash: `#${item.url}` }"
+        />
+      </v-list>
+    </v-navigation-drawer>
+    <v-main>
+      <router-view />
+    </v-main>
+  </v-app>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
-</style>
+<script setup lang="ts">
+const items = [
+  { title: "A propos de moi", icon: "mdi-face-shimmer", url: "about" },
+  { title: "Formation", icon: "mdi-school", url: "education" },
+  { title: "Expérience professionnelle", icon: "mdi-briefcase", url: "work" },
+  { title: "Langues", icon: "mdi-translate", url: "languages" },
+  { divider: true },
+  { title: "Activités", icon: "mdi-human-scooter", url: "activities" },
+  { title: "Résumé", icon: "mdi-table-of-contents", url: "summary" },
+];
+</script>

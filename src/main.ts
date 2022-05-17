@@ -1,6 +1,19 @@
 import { createApp } from "vue";
+import { createRouter, createWebHashHistory } from "vue-router";
 import App from "./App.vue";
-import router from "./router";
-import store from "./store";
+import vuetify from "./plugins/vuetify";
+import { loadFonts } from "./plugins/webfontloader";
+import HomeView from "./components/HomeView.vue";
 
-createApp(App).use(store).use(router).mount("#app");
+loadFonts();
+
+const router = createRouter({
+  history: createWebHashHistory(),
+  routes: [{ path: "/", component: HomeView }],
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) return savedPosition;
+    return { el: to.hash, top: 0, behavior: "smooth" };
+  },
+});
+
+createApp(App).use(router).use(vuetify).mount("#app");
