@@ -16,11 +16,9 @@
           <td class="text-center">{{ cat.real_hours }}</td>
           <td class="text-center">{{ cat.hours }}</td>
           <td class="text-center">
-            <v-btn
-              icon="mdi-open-in-new"
-              :href="cat.get_activities()[0].url"
-              target="_blank"
-            />
+            <template v-for="act in cat.get_activities()" :key="act.url">
+              <v-btn icon="mdi-open-in-new" :href="act.url" target="_blank" />
+            </template>
           </td>
         </tr>
       </tbody>

@@ -1,8 +1,8 @@
 <template>
   <v-container class="pad">
     <AboutComponent />
-    <EducationComponent />
     <WorkComponent />
+    <EducationComponent />
     <LanguagesComponent />
     <ActivitiesComponent />
     <SummaryComponent />

@@ -2,7 +2,12 @@
   <v-container id="education">
     <h2>Formation</h2>
     <v-timeline>
-      <v-timeline-item size="small" dot-color="green-lighten-1" fill-dot>
+      <v-timeline-item
+        size="small"
+        dot-color="green-lighten-1"
+        fill-dot
+        max-width="75%"
+      >
         <template v-slot:opposite>
           <span class="text-green-lighten-1">2019 - présent</span>
         </template>
@@ -13,7 +18,12 @@
           <v-card-text> EPHEC - Louvain-La-Neuve </v-card-text>
         </v-card>
       </v-timeline-item>
-      <v-timeline-item size="small" dot-color="indigo-lighten-2" fill-dot>
+      <v-timeline-item
+        size="small"
+        dot-color="indigo-lighten-2"
+        fill-dot
+        max-width="75%"
+      >
         <template v-slot:opposite>
           <span class="text-indigo-lighten-2">2017 - 2019</span>
         </template>
@@ -24,7 +34,12 @@
           <v-card-text> ITN Centre Asty-Moulin - Namur </v-card-text>
         </v-card>
       </v-timeline-item>
-      <v-timeline-item size="small" dot-color="green-lighten-1" fill-dot>
+      <v-timeline-item
+        size="small"
+        dot-color="green-lighten-1"
+        fill-dot
+        max-width="75%"
+      >
         <template v-slot:opposite>
           <span class="text-green-lighten-1">2012 - 2017</span>
         </template>
@@ -39,4 +54,8 @@
   </v-container>
 </template>
 
-<script setup lang="ts"></script>
+<style>
+.v-timeline-item:nth-child(even) > *:first-child {
+  justify-self: end;
+}
+</style>
